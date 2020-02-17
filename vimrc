@@ -28,7 +28,10 @@ let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
+
+let g:lucius_no_term_bg = 1
 colorscheme lucius
+LuciusBlackLowContrast
 
 " Set NERDTreeToggle to Control-o
 map <C-o> :NERDTreeToggle<CR>
