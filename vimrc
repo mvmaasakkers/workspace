@@ -23,6 +23,11 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 
+Plug 'Omnisharp/omnisharp-vim'
+
+Plug 'dense-analysis/ale'
+
+
 let g:deoplete#enable_at_startup = 1
 
 
@@ -38,3 +43,7 @@ map <C-o> :NERDTreeToggle<CR>
 
 " Set deoplete for go
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+
+let g:ale_linters = {
+\ 'cs': ['OmniSharp']
+\}
